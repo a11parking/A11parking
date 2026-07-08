@@ -336,3 +336,24 @@ width:260px;
 }
 
 }
+.line{
+
+display:inline-block;
+margin:10px 10px 0 0;
+padding:15px 28px;
+background:#06C755;
+color:white;
+text-decoration:none;
+border-radius:50px;
+font-size:18px;
+font-weight:bold;
+transition:.3s;
+
+}
+
+.line:hover{
+
+background:#00b84f;
+transform:translateY(-4px);
+
+}
