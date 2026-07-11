@@ -335,25 +335,26 @@ width:260px;
 
 }
 
+.contact-buttons{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-top:25px;
 }
+
 .line{
-
-display:inline-block;
-margin:10px 10px 0 0;
-padding:15px 28px;
-background:#06C755;
-color:white;
-text-decoration:none;
-border-radius:50px;
-font-size:18px;
-font-weight:bold;
-transition:.3s;
-
+    display:inline-block;
+    padding:15px 28px;
+    background:#06C755;
+    color:white;
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:bold;
+    font-size:18px;
+    transition:.3s;
 }
 
 .line:hover{
-
-background:#00b84f;
-transform:translateY(-4px);
-
+    background:#00b84f;
+    transform:translateY(-4px);
 }
