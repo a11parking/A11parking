@@ -265,11 +265,82 @@ text-align:center;
 margin-top:60px;
 
 }
+/* ===== ボタン ===== */
 
+.contact-buttons{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-top:25px;
+}
+
+.tel,
+.mail,
+.line{
+
+display:inline-flex;
+align-items:center;
+justify-content:center;
+
+padding:15px 28px;
+
+border-radius:50px;
+
+text-decoration:none;
+
+font-size:18px;
+
+font-weight:bold;
+
+transition:.3s;
+
+min-width:220px;
+
+}
+
+.tel{
+background:#ff9800;
+color:#fff;
+}
+
+.mail{
+background:#2196f3;
+color:#fff;
+}
+
+.line{
+background:#06C755;
+color:#fff;
+}
+
+.tel:hover,
+.mail:hover,
+.line:hover{
+
+transform:translateY(-4px);
+
+opacity:.9;
+
+}
 /* ---------- スマホ ---------- */
 
 @media(max-width:768px){
+.contact-buttons{
 
+display:flex;
+flex-direction:column;
+align-items:center;
+
+}
+}
+.tel,
+.mail,
+.line{
+
+width:260px;
+
+}
+ロゴをもっと大きく
 nav{
 
 flex-direction:column;
