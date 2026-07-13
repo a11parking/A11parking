@@ -311,6 +311,7 @@ color:#fff;
 .line{
 background:#06C755;
 color:#fff;
+ white-space: nowrap;
 }
 
 .tel:hover,
