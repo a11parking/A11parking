@@ -277,25 +277,19 @@ margin-top:60px;
 .tel,
 .mail,
 .line{
-
-display:inline-flex;
-align-items:center;
-justify-content:center;
-
-padding:15px 28px;
-
-border-radius:50px;
-
-text-decoration:none;
-
-font-size:18px;
-
-font-weight:bold;
-
-transition:.3s;
-
-min-width:220px;
-
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:220px;
+    height:52px;
+    padding:0;
+    border-radius:50px;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:bold;
+    line-height:1;
+    white-space:nowrap;
+    box-sizing:border-box;
 }
 
 .tel{
@@ -311,7 +305,6 @@ color:#fff;
 .line{
 background:#06C755;
 color:#fff;
- white-space: nowrap;
 }
 
 .tel:hover,
@@ -341,92 +334,56 @@ align-items:center;
 width:260px;
 
 }
-ロゴをもっと大きく
+@media (max-width:768px){
+
 nav{
-
-flex-direction:column;
-gap:20px;
-
+    flex-direction:column;
+    gap:20px;
 }
 
 .menu{
-
-flex-wrap:wrap;
-justify-content:center;
-
+    flex-wrap:wrap;
+    justify-content:center;
 }
 
 .hero{
-
-flex-direction:column;
-
+    flex-direction:column;
 }
 
 .hero-left{
-
-text-align:center;
-
+    text-align:center;
 }
 
 .hero-left h1{
-
-font-size:38px;
-
+    font-size:38px;
 }
 
 .hero-left h2{
-
-font-size:24px;
-
+    font-size:24px;
 }
 
 .hero-right img{
-
-max-width:100%;
-
+    max-width:100%;
 }
 
 .price-card h3{
-
-font-size:36px;
-
+    font-size:36px;
 }
 
 section h2{
-
-font-size:30px;
-
-}
-
-.tel,
-.mail{
-
-display:block;
-margin:15px auto;
-width:260px;
-
+    font-size:30px;
 }
 
 .contact-buttons{
     display:flex;
-    flex-wrap:wrap;
-    gap:15px;
-    margin-top:25px;
+    flex-direction:column;
+    align-items:center;
 }
 
+.tel,
+.mail,
 .line{
-    display:inline-block;
-    padding:15px 28px;
-    background:#06C755;
-    color:white;
-    text-decoration:none;
-    border-radius:50px;
-    font-weight:bold;
-    font-size:18px;
-    transition:.3s;
+    width:260px;
 }
 
-.line:hover{
-    background:#00b84f;
-    transform:translateY(-4px);
 }
