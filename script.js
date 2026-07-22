@@ -1,9 +1,8 @@
-// ===========================
-// A11パーキング
-// script.js
-// ===========================
+/* ===========================
+   A11パーキング
+   script.js
+=========================== */
 
-// スライドショー用画像
 const images = [
     "parking1.jpg",
     "parking2.jpg"
@@ -11,29 +10,28 @@ const images = [
 
 let current = 0;
 
-// 画像を取得
 const slide = document.getElementById("slide");
 
-// スライド切替
-function changeImage(){
+if (slide) {
 
-    current++;
+    setInterval(() => {
 
-    if(current >= images.length){
-        current = 0;
-    }
+        current++;
 
-    slide.style.opacity = 0;
+        if (current >= images.length) {
+            current = 0;
+        }
 
-    setTimeout(function(){
+        slide.style.opacity = "0";
 
-        slide.src = images[current];
+        setTimeout(() => {
 
-        slide.style.opacity = 1;
+            slide.src = images[current];
 
-    },300);
+            slide.style.opacity = "1";
+
+        }, 300);
+
+    }, 3000);
 
 }
-
-// 5秒ごとに切り替え
-setInterval(changeImage,5000);
